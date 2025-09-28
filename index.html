@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/f8be6e8420.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -11,10 +13,23 @@
         <h3>Esse aqui é o meu portifólio de sites! Aqui, você poderá encontrar links guiando para todos os sites que eu já criei, enquanto estudo web development.</h3>
     </header>
     <main>
-
+        <aside>
+            <h3><i class="fa-solid fa-desktop"></i> Sites</h3>
+            <ol id="sumario">
+                <!-- Lista de sites criada via JavaScript -->
+            </ol>
+        </aside>
+        <section>
+            <h2><i class="fa-solid fa-laptop"></i> Meus Projetos</h2>
+            <div id="projetos">
+                <!-- Cards criados via JavaScript -->
+            </div>
+        </section>
     </main>
     <footer>
-        <span>Obrigada pela visita!</span>
+        <div>
+            <p>Obrigada pela visita!</p>
+        </div>
         <div>
             <p>Redes sociais</p>
             <ul id="contato">
@@ -24,5 +39,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
