@@ -1,5 +1,4 @@
-[
-    {
+[{
         "nome": "Receitas da MasterCléo",
         "descricao": "Esse foi um dos primeiros sites que eu fiz para voltar a estudar webdev. Se trata de um site com vários cards de receitas que são carregados por um javascript. Atualmente o site é feito usando um .json, mas em breve eu irei adaptar para usar um banco de dados.",
         "link": "https://infogirl2020.github.io/receitas/index.html",
@@ -10,5 +9,11 @@
         "descricao": "O sorteador de restaurantes é um projeto simples que usa javascript para sortear aleatoriamente um restaurante de determinada lista. É um site bem pessoal, para me ajudar na hora de decidir onde comer. Usei ele para praticar meus conhecimentos em javascript e estudar mais css. Foi meu primeiro projeto de verdade.",
         "link": "https://infogirl2020.github.io/restaurantes/index.html",
         "logo": "restaurantes.png"
+    },
+    {
+        "nome": "Ficha de RPG",
+        "descricao": "Essa é minha tentativa de tentar fazer uma ficha de RPG interativa com html e javascript. Ainda está bem difícil de sair do papel, mas algum dia vai dar certo.",
+        "link": " ",
+        "logo": "dnd.png"
     }
 ]
