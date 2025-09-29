@@ -5,7 +5,7 @@ let sites = [];
 fetch("sites.json")
     .then(res => {
         if (!res.ok) throw new Error('Erro ao carregar o arquivo JSON');
-            return res.json();
+        return res.json();
     })
     .then(data => {
         sites = data;
@@ -26,7 +26,7 @@ function carregarLista() {
     });
 }
 
-function carregarSites(){
+function carregarSites() {
     cardsSites.innerHTML = "";
     sites.forEach(site => {
         cardsSites.insertAdjacentHTML("beforeend",
@@ -34,6 +34,7 @@ function carregarSites(){
                 <a href="${site.link}" target="_blank"><img src="imagens/${site.logo}" alt="Logo do site ${site.nome}" class="logo-site"></a>
                 <h3 class="titulo-site"><a href="${site.link}" target="_blank">${site.nome}</a></h3>
                 <p class="descricao-site">${site.descricao}</p>
+                <p class="periodo-site">${site.periodo}</p>
             </div>`
         );
     });

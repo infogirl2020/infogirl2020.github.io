@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: hsl(0, 1%, 25%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url(imagens/banner.png);
+    background-size: cover;
+    margin: 0 0 1.5rem 0;
+    padding: 1%;
+    text-align: right;
+    color: #ffffff;
+    font-size: 2rem;
+    text-shadow: 2px 2px 10px rgb(26, 26, 26);
+    box-shadow: 0 1px 10px black;
+}
+
+#box1,
+#box8 {
+    background-color: #e1306c;
+}
+
+#box2,
+#box4,
+#box6,
+#box9 {
+    background-color: #ff5757;
+}
+
+#box3,
+#box5,
+#box7 {
+    background-color: #e1364a;
+}
+
+.box {
+    display: inline-block;
+    z-index: 1;
+    animation: quadradoDancante 2s;
+    width: 2rem;
+    height: 2rem;
+}
+
+.box2 {
+    background-color: #e1306c;
+    display: inline-block;
+    z-index: 1;
+    animation: quadradoDancante2 2s;
+    width: 2rem;
+    height: 2rem;
+}
+
+main {
+    height: 100%;
+}
+
+#intro {
+    text-align: left;
+    background-color: hsl(0, 0%, 20%);
+    background-image: linear-gradient(hsla(0, 0%, 20%, 0.7), hsla(0, 0%, 20%, 0.7)), url(imagens/favicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem;
+    color: #e9f1f1;
+    margin: 1rem 0 0;
+}
+
+#intro h1 {
+    color: #e1364a;
+}
+
+#intro p {
+    font-size: 2rem;
+}
+
+#conteudo {
+    position: relative;
+    margin: 0;
+    color: rgb(223, 223, 223);
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #e1306c;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px black, -1px -1px 5px black;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    border-radius: 4px;
+    position: fixed;
+}
+
+aside {
+    height: 100dvh;
+    width: 65%;
+    padding: 3rem 1rem 0 2rem;
+    background-color: hsl(0, 0%, 20%);
+    position: fixed;
+    font-size: 1.5rem;
+    border-right: #e1306c solid 5px;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+    z-index: 9999;
+}
+
+.menu-toggle:checked~#conteudo aside {
+    transform: translateX(0);
+}
+
+aside h3 {
+    color: #e1364a;
+    font-size: 2rem;
+    margin: 2%;
+}
+
+#sumario {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#sumario li {
+    margin-bottom: 0.5rem;
+}
+
+#sumario li a {
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+    font-weight: bold;
+}
+
+#sumario li a:hover {
+    color: rgb(180, 58, 58);
+    text-shadow: 1px 1px 1px black;
+}
+
+section {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+
+section h2 {
+    color: #e1364a;
+    text-shadow: 1px 1px 3px black;
+    font-size: 2.5rem;
+}
+
+.card {
+    background-color: hsl(0, 0%, 20%);
+    border: 0.5rem solid #e1364a;
+    border-radius: 20px;
+    padding: 0.7em;
+    width: fit-content;
+    margin: 1.5rem auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e9f1f1;
+    box-shadow: 2px 2px 15px black;
+}
+
+.logo-site {
+    width: auto;
+    max-height: 30vh;
+}
+
+.titulo-site a {
+    text-decoration: none;
+    color: rgb(218, 46, 46);
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.titulo-site a:hover {
+    text-decoration: underline;
+    color: rgb(255, 100, 100);
+    text-shadow: 2px 2px 2px rgb(66, 63, 63);
+}
+
+footer {
+    background-color: hsl(0, 0%, 20%);
+    margin: 0;
+    padding: 1% auto;
+    color: rgb(180, 58, 58);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+    box-shadow: 0 -1px 10px black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: block;
+}
+
+.contato {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.contato a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #252424;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.fa-instagram {
+    color: #e1306c;
+}
+
+@keyframes quadradoDancante {
+    0% {
+        transform: translateX(-2000%) rotateZ(0deg);
+    }
+    100% {
+        transform: translateX(0) rotateZ(720deg);
+    }
+}
+
+@keyframes quadradoDancante2 {
+    0% {
+        transform: translateX(2000%) rotateZ(0deg);
+    }
+    100% {
+        transform: translateX(0) rotateZ(720deg);
+    }
+}
