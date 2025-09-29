@@ -1,0 +1,262 @@
+html {
+    background-color: #f9f5ec;
+}
+
+header {
+    background-color: #780000;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-container {
+    display: block;
+    padding-left: 3%;
+}
+
+#logo {
+    width: 20%;
+    float: right;
+    margin: 3rem 1rem 0rem;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    background-color: #C1121F;
+}
+
+#menu {
+    padding: 0;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu li a {
+    color: #FDF0D5;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 5px;
+    display: block;
+}
+
+#menu li a:hover {
+    background-color: #7c070f;
+}
+
+.content {
+    margin: 2% 3%;
+    padding: 4%;
+    background-color: #FDF0D5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    color: #191919;
+    line-height: 1.6;
+    font-size: 1.3rem;
+    border: 2px solid #780000;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.preco-texto {
+    background-color: rgb(172, 215, 185);
+    border: green 2px solid;
+    width: fit-content;
+    padding: 0 5%;
+    font-size: 1.1rem;
+    margin: 0 1%;
+    float: none;
+    border-radius: 15px;
+}
+
+.preco-texto-inside {
+    display: block;
+}
+
+.fa-chevron-down {
+    color: transparent;
+}
+
+#declaracao {
+    font-size: smaller;
+    color: lightcoral;
+    text-decoration: line-through;
+}
+
+.dado-content {
+    text-align: center;
+}
+
+.dado-titulo {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    margin-top: 0%;
+}
+
+.resultado-container {
+    font-size: 1.5rem;
+    border: #7c070f 2px solid;
+    border-radius: 10px;
+    background-color: #f9dadc;
+    width: fit-content;
+    position: absolute;
+    line-height: normal;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+    overflow: auto;
+}
+
+.resultado-container.mostrar {
+    display: block;
+}
+
+.resultado-box {
+    position: relative;
+    /* referência para posicionar o dado */
+    text-align: center;
+    max-width: 80vw;
+    /* limite horizontal (90% da largura da tela) */
+    max-height: 80vh;
+    /* limite vertical (90% da altura da tela) */
+    margin: 0 auto;
+}
+
+.restaurante-foto {
+    max-width: 100%;
+    /* nunca ultrapassa a largura do container */
+    max-height: 40vh;
+    /* limita a altura da foto na tela */
+    object-fit: contain;
+    /* ajusta a foto sem cortar */
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+#rolarDado {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+}
+
+.fechar-resultado {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.fechar-resultado:hover {
+    color: red;
+}
+
+.dadoBotao {
+    width: 20rem;
+}
+
+#rolarDado:hover {
+    cursor: pointer;
+}
+
+.dado-resultado {
+    position: relative;
+    display: inline-block;
+    font-size: 5rem;
+    color: #de0303;
+    margin: 1rem;
+}
+
+.critico {
+    font-weight: bold;
+}
+
+.sucesso {
+    font-size: smaller;
+    line-height: normal;
+}
+
+.dado-resultado .numero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    /* tamanho do número */
+    font-weight: bold;
+    color: white;
+    /* contraste com o dado */
+    text-shadow: 0 0 4px black;
+    /* para destacar melhor */
+}
+
+@keyframes girarDado {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dado-animando {
+    animation: girarDado 0.6s linear infinite;
+    font-size: 15rem;
+    color: #de0303;
+}
+
+#cifrao {
+    color: rgb(1, 77, 1);
+    font-weight: bolder;
+}
+
+#restaurantes-section {
+    margin-bottom: 15%;
+    padding: 0 3%;
+}
+
+#listaRestaurantes {
+    columns: 1;
+    text-align: left;
+}
+
+footer {
+    background-color: #003049;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    margin-top: 10px;
+    position: fixed;
+}

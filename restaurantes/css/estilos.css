@@ -1,0 +1,272 @@
+html {
+    background-color: #f9f5ec;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #780000;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    padding: 1% 2% 0;
+}
+
+#logo {
+    width: 15%;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    background-color: #C1121F;
+}
+
+#menu {
+    padding: 0 1%;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu li a {
+    color: #FDF0D5;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    display: block;
+}
+
+#menu li a:hover {
+    background-color: #7c070f;
+}
+
+.content {
+    margin: 2% 3%;
+    padding: 2%;
+    background-color: #FDF0D5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    color: #191919;
+    line-height: 1.6;
+    font-size: 18px;
+    border: 2px solid #780000;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.preco-texto {
+    background-color: rgb(172, 215, 185);
+    border: green 2px solid;
+    width: 40%;
+    padding: 0 1%;
+    font-size: smaller;
+    margin: 0 1%;
+    float: right;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.preco-texto-inside {
+    display: none;
+}
+
+#mostrar-preco-texto:hover~.preco-texto-inside {
+    display: block;
+    cursor: pointer;
+}
+
+#declaracao {
+    font-size: smaller;
+    color: lightcoral;
+    text-decoration: line-through;
+}
+
+#dado-section {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.dado-content {
+    text-align: center;
+}
+
+.dado-titulo {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    margin-top: 0%;
+}
+
+.resultado-container {
+    font-size: 1.5rem;
+    border: #7c070f 2px solid;
+    border-radius: 10px;
+    background-color: #f9dadc;
+    width: fit-content;
+    position: absolute;
+    line-height: 35%;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+}
+
+.resultado-container.mostrar {
+    display: block;
+}
+
+.resultado-box {
+    position: relative;
+    /* referência para posicionar o dado */
+    text-align: center;
+    max-width: 90vw;
+    /* limite horizontal (90% da largura da tela) */
+    max-height: 90vh;
+    /* limite vertical (90% da altura da tela) */
+    margin: 0 auto;
+}
+
+.restaurante-foto {
+    max-width: 100%;
+    /* nunca ultrapassa a largura do container */
+    max-height: 40vh;
+    /* limita a altura da foto na tela */
+    object-fit: contain;
+    /* ajusta a foto sem cortar */
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+#rolarDado {
+    background-color: inherit;
+    border: none;
+}
+
+.fechar-resultado {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.fechar-resultado:hover {
+    color: red;
+}
+
+.dadoBotao {
+    width: 20rem;
+}
+
+#rolarDado:hover {
+    cursor: pointer;
+}
+
+.dado-resultado {
+    position: relative;
+    display: inline-block;
+    font-size: 5rem;
+    color: #de0303;
+    margin: 1rem;
+}
+
+.critico {
+    font-weight: bold;
+}
+
+.sucesso {
+    font-size: smaller;
+    line-height: normal;
+}
+
+.dado-resultado .numero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    /* tamanho do número */
+    font-weight: bold;
+    color: white;
+    /* contraste com o dado */
+    text-shadow: 0 0 4px black;
+    /* para destacar melhor */
+}
+
+@keyframes girarDado {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dado-animando {
+    animation: girarDado 0.6s linear infinite;
+    font-size: 15rem;
+    color: #de0303;
+}
+
+#cifrao {
+    color: rgb(1, 77, 1);
+    font-weight: bolder;
+}
+
+#restaurantes-section {
+    margin-bottom: 4%;
+}
+
+#listaRestaurantes {
+    columns: 3;
+    column-gap: 2rem;
+    list-style-position: inside;
+}
+
+footer {
+    background-color: #003049;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1%;
+    position: fixed;
+}
