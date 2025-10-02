@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="espaco">
+        <div class="sol"></div>
+        <div class="mercurio"></div>
+        <div class="venus"></div>
+        <div class="terra">
+            <div class="lua"></div>
+        </div>
+        <div class="marte"></div>
+        <div class="jupiter"></div>
+        <div class="saturno">
+            <div class="aneis"></div>
+        </div>
+        <div class="urano"></div>
+        <div class="netuno"></div>
+        <div class="plutao"></div>
+    </div>
+    <script>
+        function criarEstrelas() {
+            const espaco = document.querySelector("body");
+            for (let i = 0; i < 4500; i++) {
+                const estrelas = document.createElement("div")
+                estrelas.className = "estrelas";
+                estrelas.style.width = ".1px";
+                estrelas.style.height = ".1px";
+                estrelas.style.top = Math.random() * 100 + "%";
+                estrelas.style.left = Math.random() * 100 + "%";
+                espaco.appendChild(estrelas)
+            }
+        }
+
+        criarEstrelas();
+    </script>
+</body>
+
+</html>
