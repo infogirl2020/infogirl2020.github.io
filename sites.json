@@ -21,7 +21,7 @@
     },
     {
         "nome": "Sistema Solar",
-        "descricao": "Uma simples representação do sistema solar usango majoritariamente css, e um pouco de javascript para gerar as estrelas no fundo. A inspiração usada foi um vídeo no Youtube (https://www.youtube.com/watch?v=qCp9mipNKuo).",
+        "descricao": "Uma simples representação do sistema solar usango majoritariamente css, e um pouco de javascript para gerar as estrelas no fundo. A inspiração usada foi um vídeo no Youtube do canal CogniSolver.",
         "link": "https://infogirl2020.github.io/sistemasolar/",
         "logo": "sol.png",
         "periodo": "Out/2025"
