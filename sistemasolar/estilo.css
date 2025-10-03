@@ -81,7 +81,7 @@ body {
     left: 10em;
     width: 20em;
     height: 20em;
-    animation: orbitaretrograda 22.5s linear infinite;
+    animation: orbita 22.5s linear infinite;
 }
 
 .venus::before {
@@ -202,7 +202,7 @@ body {
     left: -17em;
     width: 75em;
     height: 75em;
-    animation: orbitaretrograda 3068.7s linear infinite;
+    animation: orbita 3068.7s linear infinite;
 }
 
 .urano::before {
@@ -282,14 +282,10 @@ body {
 }
 
 
-/* Animações */
+/* Animação */
 
 @keyframes orbita {
     100% {
         transform: rotate(360deg);
     }
-}
-
-@keyframes orbitaretrograda {
-     100% { transform: rotate(-360deg) }
 }
