@@ -10,11 +10,13 @@ body {
 }
 
 header {
-    background-image: url(imagens/banner.png);
-    background-size: cover;
+    background-image: url(imagens/bannermobile.png);
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0 0 1.5rem 0;
     padding: 1%;
-    text-align: right;
+    text-align: center;
     color: #ffffff;
     font-size: 2rem;
     text-shadow: 2px 2px 10px rgb(26, 26, 26);
@@ -39,21 +41,19 @@ header {
     background-color: #e1364a;
 }
 
-.box {
+.box, .box2 {
     display: inline-block;
     z-index: 1;
+    width: 0.7rem;
+    height: 0.7rem;
+}
+
+.box{
     animation: quadradoDancante 2s;
-    width: 2rem;
-    height: 2rem;
 }
 
 .box2 {
-    background-color: #e1306c;
-    display: inline-block;
-    z-index: 1;
     animation: quadradoDancante2 2s;
-    width: 2rem;
-    height: 2rem;
 }
 
 main {
@@ -63,7 +63,7 @@ main {
 #intro {
     text-align: left;
     background-color: hsl(0, 0%, 20%);
-    background-image: linear-gradient(hsla(0, 0%, 20%, 0.7), hsla(0, 0%, 20%, 0.7)), url(imagens/favicon.png);
+    background-image: linear-gradient(hsla(0, 0%, 20%, 0.7), hsla(0, 0%, 20%, 0.7)), url(imagens/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -96,6 +96,7 @@ main {
     padding: 0.5rem;
     font-size: 1.5rem;
     background-color: #e1306c;
+    box-shadow: 1px 1px 5px black;
     color: white;
     font-weight: bold;
     text-shadow: 1px 1px 5px black, -1px -1px 5px black;

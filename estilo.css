@@ -63,7 +63,7 @@ main {
 #intro {
     text-align: justify;
     background-color: hsl(0, 0%, 20%);
-    background-image: linear-gradient(hsla(0, 0%, 20%, 0.7), hsla(0, 0%, 20%, 0.7)), url(imagens/favicon.png);
+    background-image: linear-gradient(hsla(0, 0%, 20%, 0.7), hsla(0, 0%, 20%, 0.7)), url(imagens/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
