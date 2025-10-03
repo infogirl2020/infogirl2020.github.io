@@ -29,13 +29,13 @@
     <script>
         function criarEstrelas() {
             const espaco = document.querySelector("body");
-            for (let i = 0; i < 4500; i++) {
+            for (let i = 0; i < 9000; i++) {
                 const estrelas = document.createElement("div")
                 estrelas.className = "estrelas";
                 estrelas.style.width = ".1px";
                 estrelas.style.height = ".1px";
-                estrelas.style.top = Math.random() * 100 + "%";
-                estrelas.style.left = Math.random() * 100 + "%";
+                estrelas.style.top = Math.random() * 150 + "%";
+                estrelas.style.left = Math.random() * 150 + "%";
                 espaco.appendChild(estrelas)
             }
         }

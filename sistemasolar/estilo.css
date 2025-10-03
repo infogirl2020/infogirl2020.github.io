@@ -139,7 +139,7 @@ body {
 }
 
 .marte::before {
-    top: 4.4em;
+    top: 4.5em;
     right: 3em;
     width: 2.8em;
     height: 2.8em;
@@ -162,7 +162,7 @@ body {
     right: 3.5em;
     width: 5em;
     height: 5em;
-    background-color: rgb(209, 198, 165);
+    background-image: radial-gradient(rgb(224, 197, 168), rgb(224, 197, 168), rgb(239, 172, 141), rgb(224, 197, 168), rgb(224, 197, 168));
 }
 
 
@@ -177,11 +177,11 @@ body {
 }
 
 .saturno::before {
-    top: 6.5em;
+    top: 6.8em;
     right: 5em;
     width: 5em;
     height: 5em;
-    background-color: rgb(214, 178, 86);
+    background-image: radial-gradient(rgb(214, 178, 86), rgb(196, 163, 79), rgb(143, 118, 57), rgb(214, 178, 86));
 }
 
 .aneis {
@@ -190,8 +190,8 @@ body {
     border-radius: 50px;
     width: 6em;
     height: 6em;
-    top: 5.2em;
-    right: 3.6em;
+    top: 5.55em;
+    right: 3.65em;
 }
 
 
@@ -229,7 +229,7 @@ body {
     right: 12em;
     width: 4.3em;
     height: 4.3em;
-    background-color: darkblue;
+    background-image: radial-gradient(darkblue, rgb(2, 2, 162), darkblue);
 }
 
 
@@ -248,7 +248,7 @@ body {
     right: 14em;
     width: 1.2em;
     height: 1.2em;
-    background-color: burlywood;
+    background-image: linear-gradient(rgb(55, 0, 0), burlywood);
 }
 
 
@@ -280,7 +280,6 @@ body {
     border-radius: 50%;
     z-index: -1;
 }
-
 
 /* Animação */
 
