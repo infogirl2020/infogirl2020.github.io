@@ -125,6 +125,7 @@ button:hover {
 @media (max-width: 600px) {
     body {
         padding: 15px;
+        flex-direction: column;
     }
 
     .tradutor {
