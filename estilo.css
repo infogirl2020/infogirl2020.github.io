@@ -146,7 +146,7 @@ section h2 {
     border: 0.5rem solid #e1364a;
     border-radius: 20px;
     padding: 0.7em;
-    width: fit-content;
+    width: 100%;
     max-width: 100%;
     margin: 1.5rem auto;
     text-align: center;
