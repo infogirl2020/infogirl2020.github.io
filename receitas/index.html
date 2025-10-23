@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas da MasterCléo</title>
+    <link rel="icon" href="imagens/icon.png">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/IMG_0340.JPG" alt="MasterCléo" id="logo">
+        <h1 id="titulo">Receitas da MasterCléo</h1>
+        <div class="bt">
+            <button class="botao" onclick="window.location.href='forms.html'">Adicionar Nova Receita</button>
+            <div class="botoes-ordenar">
+                <button class="botao" onclick="ordenar('nome')">Ordenar por Nome</button>
+                <button class="botao" onclick="ordenar('categoria')">Ordenar por Categoria</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <h2>Receitas</h2>
+            <ol id="sumario"></ol>
+        </aside>
+        <section>
+            <div id="conteudo"></div>
+        </section>
+    </main>
+    <footer>
+        <span>MasterCléo © Todos os Direitos Reservados</span>
+        <span></span>
+        <div class="contato">
+            <a href="https://www.instagram.com/thewriter_br?igsh=MTRwM2RzZTd1YnE1bQ==" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/cleo-pereira" target="_blank" aria-label="Github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/cleopatra_pef?t=zAxE9K2dkBkuIY79ql-bxg&s=09" target="_blank" aria-label="x-twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com/@coelhoquefazmiau?_t=ZM-8zkWxigE3dN&_r=1" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

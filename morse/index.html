@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor de código morse</title>
+    <link rel="icon" href="imagens/icon.png">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+    <body>
+        <div class="conteiner">
+            <div id="morse-alfa" class="tradutor">
+                <h2>Alfabeto Romano => Código Morse</h2>
+                <!-- Forms para inserir o código -->
+                <input type="text" id="texto" placeholder="Digite uma palavra ou frase">
+                <button onclick="traduzir()">Traduzir</button>
+                <div class="traducao">
+                    <p id="result"></p>
+                </div>
+            </div>
+            <div id="alfa-morse" class="tradutor">
+                <h2>Código Morse => Alfabeto Romano</h2>
+                <!-- Forms para inserir o código -->
+                <input type="text" id="codigo" placeholder="Digite o código morse">
+                <button onclick="traduzirContrario()">Traduzir</button>
+                <div class="traducao">
+                    <p id="result2"></p>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

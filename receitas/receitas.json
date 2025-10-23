@@ -1,0 +1,309 @@
+[{
+        "nome": "Bolo de Chocolate",
+        "foto": "bolo_chocolate.jpg",
+        "categoria": "Sobremesa",
+        "tempo_preparo": "60 minutos",
+        "ingredientes": [
+            { "item": "Farinha de trigo", "quantidade": "2 xícaras" },
+            { "item": "Açúcar", "quantidade": "1.5 xícaras" },
+            { "item": "Chocolate em pó", "quantidade": "1 xícara" },
+            { "item": "Leite", "quantidade": "1 xícara" },
+            { "item": "Óleo", "quantidade": "meia xícara" },
+            { "item": "Ovos", "quantidade": "3 unidades" },
+            { "item": "Fermento em pó", "quantidade": "1 colher de sopa" }
+        ],
+        "modo_preparo": [
+            "Preaqueça o forno a 180°C.",
+            "Em uma tigela, misture a farinha, o açúcar e o chocolate em pó.",
+            "Adicione o leite, o óleo e os ovos, misturando bem.",
+            "Por último, acrescente o fermento e mexa delicadamente.",
+            "Despeje a massa em uma forma untada e asse por cerca de 40 minutos."
+        ]
+    },
+    {
+        "nome": "Macarrão à Bolonhesa",
+        "foto": "macarrao_bolonhesa.jpg",
+        "categoria": "Prato Principal",
+        "tempo_preparo": "40 minutos",
+        "ingredientes": [
+            { "item": "Macarrão espaguete", "quantidade": "500g" },
+            { "item": "Carne moída", "quantidade": "400g" },
+            { "item": "Molho de tomate", "quantidade": "2 xícaras" },
+            { "item": "Cebola", "quantidade": "1 unidade" },
+            { "item": "Alho", "quantidade": "2 dentes" },
+            { "item": "Azeite", "quantidade": "2 colheres de sopa" },
+            { "item": "Sal", "quantidade": "a gosto" },
+            { "item": "Pimenta-do-reino", "quantidade": "a gosto" }
+        ],
+        "modo_preparo": [
+            "Cozinhe o macarrão em água salgada até ficar al dente.",
+            "Em uma panela, refogue a cebola e o alho no azeite.",
+            "Adicione a carne moída e cozinhe até dourar.",
+            "Acrescente o molho de tomate, tempere com sal e pimenta e deixe cozinhar por 15 minutos.",
+            "Misture o molho ao macarrão cozido e sirva quente."
+        ]
+    },
+    {
+        "nome": "Salada Caesar",
+        "foto": "salada_caesar.jpg",
+        "categoria": "Entrada",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": [
+            { "item": "Alface romana", "quantidade": "1 pé" },
+            { "item": "Croutons", "quantidade": "1 xícara" },
+            { "item": "Peito de frango grelhado", "quantidade": "200g" },
+            { "item": "Parmesão ralado", "quantidade": "meia xícara" },
+            { "item": "Molho Caesar", "quantidade": "meia xícara" }
+        ],
+        "modo_preparo": [
+            "Lave e rasgue as folhas de alface em pedaços médios.",
+            "Grelhe o peito de frango e corte em tiras.",
+            "Misture a alface com o molho Caesar.",
+            "Adicione o frango, os croutons e finalize com parmesão ralado."
+        ]
+    },
+    {
+        "nome": "Panqueca Americana",
+        "foto": "panqueca_americana.jpg",
+        "categoria": "Café da Manhã",
+        "tempo_preparo": "25 minutos",
+        "ingredientes": [
+            { "item": "Farinha de trigo", "quantidade": "1.5 xícaras" },
+            { "item": "Leite", "quantidade": "1.25 xícaras" },
+            { "item": "Ovos", "quantidade": "1 unidade" },
+            { "item": "Manteiga derretida", "quantidade": "3 colheres de sopa" },
+            { "item": "Açúcar", "quantidade": "2 colheres de sopa" },
+            { "item": "Fermento em pó", "quantidade": "1 colher de sopa" },
+            { "item": "Sal", "quantidade": "meia colher de chá" }
+        ],
+        "modo_preparo": [
+            "Misture os ingredientes secos em uma tigela.",
+            "Adicione o leite, o ovo e a manteiga, mexendo até ficar homogêneo.",
+            "Aqueça uma frigideira untada e despeje pequenas porções de massa.",
+            "Cozinhe até dourar os dois lados.",
+            "Sirva com mel ou frutas."
+        ]
+    },
+    {
+        "nome": "Sopa de Legumes",
+        "foto": "sopa_legumes.jpg",
+        "categoria": "Sopa",
+        "tempo_preparo": "45 minutos",
+        "ingredientes": [
+            { "item": "Batata", "quantidade": "2 unidades" },
+            { "item": "Cenoura", "quantidade": "2 unidades" },
+            { "item": "Abobrinha", "quantidade": "1 unidade" },
+            { "item": "Cebola", "quantidade": "1 unidade" },
+            { "item": "Alho", "quantidade": "2 dentes" },
+            { "item": "Água", "quantidade": "1.5 litros" },
+            {
+                "item": "Sal",
+                "quantidade": "a gosto"
+            },
+            {
+                "item": "Pimenta-do-reino",
+                "quantidade": "a gosto"
+            }
+        ],
+        "modo_preparo": [
+            "Descasque e corte os legumes em pedaços médios.",
+            "Refogue a cebola e o alho em uma panela.",
+            "Adicione os legumes e cubra com água.",
+            "Tempere com sal e pimenta e cozinhe até os legumes ficarem macios.",
+            "Se preferir, bata parte da sopa no liquidificador para engrossar."
+        ]
+    },
+    {
+        "nome": "Arroz",
+        "foto": "arroz.jpg",
+        "categoria": "Prato Principal",
+        "tempo_preparo": "20 minutos",
+        "ingredientes": [{
+                "item": "Arroz",
+                "quantidade": "1 xícara"
+            },
+            {
+                "item": "Água",
+                "quantidade": "2 xícaras"
+            },
+            {
+                "item": "Alho",
+                "quantidade": "1 dente"
+            },
+            {
+                "item": "Óleo",
+                "quantidade": "o suficiente"
+            },
+            {
+                "item": "Sal",
+                "quantidade": "a gosto"
+            },
+            {
+                "item": "Cebola",
+                "quantidade": "1 unidade"
+            }
+        ],
+        "modo_preparo": [
+            "Refogue o alho e a cebola no azeite.",
+            "Coloque o arroz e deixe fritar por cerca de 30 segundos.",
+            "Adicione a água fervente e o sal.",
+            "Abaixe o fogo e deixe cozinhar até a água quase secar",
+            "Tampe a panela e aguarde cerca de 20 minutos antes de servir.",
+            "Se desejar fazer mais, é só seguir as proporções, principalmente da água."
+        ]
+    },
+    {
+        "nome": "Brownie Recheado",
+        "foto": "brownie.jpg",
+        "categoria": "Sobremesa",
+        "tempo_preparo": "50 minutos",
+        "ingredientes": [{
+                "item": "Manteiga (para o brigadeiro)",
+                "quantidade": "15g"
+            },
+            {
+                "item": "Chocolate meio amargo (para o brigadeiro)",
+                "quantidade": "150g"
+            },
+            {
+                "item": "Creme de leite",
+                "quantidade": "200g"
+            },
+            {
+                "item": "Leite condensado",
+                "quantidade": "1 lata (395g)"
+            },
+            {
+                "item": "Manteiga (para o brownie)",
+                "quantidade": "140g"
+            },
+            {
+                "item": "Chocolate meio amargo (para o brownie)",
+                "quantidade": "230g"
+            },
+            {
+                "item": "Ovos",
+                "quantidade": "3 unidades"
+            },
+            {
+                "item": "Essência de baunilha",
+                "quantidade": "1 colher de chá"
+            },
+            {
+                "item": "Farinha de trigo",
+                "quantidade": "80g"
+            },
+            {
+                "item": "Cacau em pó",
+                "quantidade": "80g"
+            },
+            {
+                "item": "Granulado (opcional)",
+                "quantidade": "a gosto"
+            }
+        ],
+        "modo_preparo": [
+            "Em uma panela, adicione o leite condensado, o creme de leite, a manteiga e o chocolate. Leve tudo ao fogo e mexa bem até ficar no ponto de brigadeiro. Depois, deixe esfriando.",
+            "Na batedeira, junte o os ovos, o açúcar e a essência de baunilha. Bata até ficar bem clarinho e espumoso.",
+            "Em outra tigela, junte a manteiga e o chocolate, leve os dois para derreter e junte no creme de ovos.",
+            "Acrescente o cacau em pó e a farinha de trigo e mexa até ficar homogêneo.",
+            "Transfira a massa para uma frigideira, coloque algumas colheradas de brigadeiro por cima e coloque no forno a 180°C por aproximadamente 35 minutos."
+        ]
+    },
+    {
+        "nome": "Lasanha de Carne",
+        "foto": "lasanha_carne.jpg",
+        "categoria": "Prato Principal",
+        "tempo_preparo": "90 minutos",
+        "ingredientes": [
+            { "item": "Massa de lasanha", "quantidade": "500 g" },
+            { "item": "Carne moída", "quantidade": "500 g" },
+            { "item": "Molho de tomate", "quantidade": "2 xícaras" },
+            { "item": "Queijo mussarela", "quantidade": "300 g" },
+            { "item": "Presunto", "quantidade": "200 g" },
+            { "item": "Cebola", "quantidade": "1 unidade" },
+            { "item": "Alho", "quantidade": "2 dentes" },
+            { "item": "Azeite", "quantidade": "2 colheres de sopa" },
+            { "item": "Sal", "quantidade": "a gosto" },
+            { "item": "Pimenta-do-reino", "quantidade": "a gosto" }
+        ],
+        "modo_preparo": [
+            "Refogue a cebola e o alho no azeite.",
+            "Adicione a carne moída e cozinhe até dourar.",
+            "Acrescente o molho de tomate, sal e pimenta, deixando cozinhar por 10 minutos.",
+            "Em um refratário, alterne camadas de massa, molho, presunto e queijo.",
+            "Finalize com queijo mussarela por cima e leve ao forno preaquecido a 180°C por cerca de 40 minutos."
+        ]
+    },
+    {
+        "nome": "Salada Grega",
+        "foto": "salada_grega.jpg",
+        "categoria": "Entrada",
+        "tempo_preparo": "15 minutos",
+        "ingredientes": [
+            { "item": "Tomate", "quantidade": "2 unidades" },
+            { "item": "Pepino", "quantidade": "1 unidade" },
+            { "item": "Cebola roxa", "quantidade": "1 unidade" },
+            { "item": "Azeitonas pretas", "quantidade": "100 g" },
+            { "item": "Queijo feta", "quantidade": "150 g" },
+            { "item": "Azeite de oliva", "quantidade": "3 colheres de sopa" },
+            { "item": "Orégano", "quantidade": "a gosto" },
+            { "item": "Sal", "quantidade": "a gosto" }
+        ],
+        "modo_preparo": [
+            "Corte o tomate, o pepino e a cebola em pedaços médios.",
+            "Coloque em uma tigela junto com as azeitonas e o queijo feta em cubos.",
+            "Regue com azeite, tempere com orégano e sal.",
+            "Misture bem e sirva fresca."
+        ]
+    },
+    {
+        "nome": "Torta de Frango",
+        "foto": "torta_frango.jpg",
+        "categoria": "Prato Principal",
+        "tempo_preparo": "70 minutos",
+        "ingredientes": [
+            { "item": "Farinha de trigo", "quantidade": "2 xícaras" },
+            { "item": "Leite", "quantidade": "1 xícara" },
+            { "item": "Ovos", "quantidade": "3 unidades" },
+            { "item": "Óleo", "quantidade": "0.5 xícara" },
+            { "item": "Peito de frango desfiado", "quantidade": "500 g" },
+            { "item": "Milho verde", "quantidade": "1 lata" },
+            { "item": "Cebola", "quantidade": "1 unidade" },
+            { "item": "Sal", "quantidade": "a gosto" },
+            { "item": "Pimenta-do-reino", "quantidade": "a gosto" }
+        ],
+        "modo_preparo": [
+            "Bata no liquidificador a farinha, o leite, os ovos e o óleo até formar uma massa homogênea.",
+            "Refogue o frango desfiado com cebola, milho, sal e pimenta.",
+            "Em uma forma untada, despeje metade da massa.",
+            "Adicione o recheio de frango e cubra com o restante da massa.",
+            "Leve ao forno preaquecido a 180°C por cerca de 45 minutos ou até dourar."
+        ]
+    },
+    {
+        "nome": "Sorvete de oreo",
+        "foto": "sorveteoreo.jpg",
+        "categoria": "Sobremesa",
+        "tempo_preparo": "5 minutos + algumas horas no congelador",
+        "ingredientes": [{
+                "item": "Leite condensado",
+                "quantidade": "1 caixa"
+            },
+            {
+                "item": "Creme de leite",
+                "quantidade": "2 caixas"
+            },
+            {
+                "item": "Oreo",
+                "quantidade": "1 pacote"
+            }
+        ],
+        "modo_preparo": [
+            "Quebre os biscoitos em pedaços pequenos.",
+            "Bata o creme de leite e o leite condensado em uma batedeira.",
+            "Misture todos os ingredientes em um pote ou travessa e leve ao congelador.",
+            "Deixe congelando por algumas horas até virar um sorvete."
+        ]
+    }
+]
