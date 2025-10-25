@@ -1,0 +1,161 @@
+[{
+        "id": 1,
+        "foto": "megabox.jpg",
+        "nome": "Mega Box",
+        "tipo": "Variados",
+        "preco": 2,
+        "bairro": "Olaria - RJ"
+    },
+    {
+        "id": 2,
+        "foto": "mcdonalds.jpg",
+        "nome": "McDonald's",
+        "tipo": "Fast Food",
+        "preco": 1,
+        "bairro": "Qualquer Shopping por aí"
+    },
+    {
+        "id": 3,
+        "foto": "kfc.jpg",
+        "nome": "KFC - Kentucky Fried Chicken",
+        "tipo": "Fast Food",
+        "preco": 1,
+        "bairro": "Qualquer Shopping por aí"
+    },
+    {
+        "id": 4,
+        "foto": "curva.jpg",
+        "nome": "Curva",
+        "tipo": "Variados",
+        "preco": 1,
+        "bairro": "Olaria - RJ"
+    },
+    {
+        "id": 5,
+        "foto": "spoleto.jpg",
+        "nome": "Spoleto",
+        "tipo": "Comida Italiana",
+        "preco": 1,
+        "bairro": "Qualquer Shopping por aí"
+    },
+    {
+        "id": 6,
+        "foto": "parme.jpg",
+        "nome": "Parmê",
+        "tipo": "Comida Italiana e variados",
+        "preco": 2,
+        "bairro": "Qualquer Shopping por aí"
+    },
+    {
+        "id": 7,
+        "foto": "mania-de-churrasco.jpg",
+        "nome": "Mania de Churrasco",
+        "tipo": "Steak house",
+        "preco": 1,
+        "bairro": "Qualquer Shopping por aí"
+    },
+    {
+        "id": 8,
+        "foto": "jeronimo.jpg",
+        "nome": "Jerônimo",
+        "tipo": "Fast Food",
+        "preco": 1,
+        "bairro": "Nova América, Santos Dumond e Barra da Tijuca - RJ"
+    },
+    {
+        "id": 9,
+        "foto": "belucci.jpg",
+        "nome": "Belucci",
+        "tipo": "Comida Italiana",
+        "preco": 2,
+        "bairro": "Ilha do Governador - RJ"
+    },
+    {
+        "id": 10,
+        "foto": "tjburguer.jpg",
+        "nome": "TJ Burger",
+        "tipo": "Fast Food",
+        "preco": 2,
+        "bairro": "Olaria - RJ"
+    },
+    {
+        "id": 11,
+        "foto": "camaradacamarao.jpg",
+        "nome": "Camarada Camarão",
+        "tipo": "Frutos do mar",
+        "preco": 2,
+        "bairro": "Qualquer Shopping por aí"
+    },
+    {
+        "id": 12,
+        "foto": "outback.jpg",
+        "nome": "Outback",
+        "tipo": "Steak house",
+        "preco": 2,
+        "bairro": "Qualquer Shopping por aí"
+    },
+    {
+        "id": 13,
+        "foto": "sushidapraca.jpg",
+        "nome": "Sushi da Praça",
+        "tipo": "Comida Japonesa",
+        "preco": 3,
+        "bairro": "Vista Alegre - RJ"
+    },
+    {
+        "id": 14,
+        "foto": "boteco.jpg",
+        "nome": "Boteco do Manolo",
+        "tipo": "Comida comida",
+        "preco": 3,
+        "bairro": "Qualquer Shopping por aí"
+    },
+    {
+        "id": 15,
+        "foto": "terrabrasilis.jpg",
+        "nome": "Terra Brasilis",
+        "tipo": "Comida comida",
+        "preco": 2,
+        "bairro": "Urca - RJ"
+    },
+    {
+        "id": 16,
+        "foto": "fogodechao.jpg",
+        "nome": "Fogo de Chão",
+        "tipo": "Steak house",
+        "preco": 3,
+        "bairro": "Botafogo - RJ"
+    },
+    {
+        "id": 17,
+        "foto": "guacamole.jpg",
+        "nome": "Guacamole",
+        "tipo": "Comida Mexicana",
+        "preco": 3,
+        "bairro": "Jardim Botânico - RJ"
+    },
+    {
+        "id": 18,
+        "foto": "xian.jpg",
+        "nome": "Xian",
+        "tipo": "Comida Asiática",
+        "preco": 2,
+        "bairro": "Bossa Nova Mall"
+    },
+    {
+        "id": 19,
+        "foto": "canton.jpg",
+        "nome": "Cantón",
+        "tipo": "Comida Asiática e Peruana",
+        "preco": 2,
+        "bairro": "Copacabana e Botafogo - RJ"
+    },
+    {
+        "id": 20,
+        "foto": "michelin.png",
+        "nome": "Michelin",
+        "tipo": "Variado",
+        "preco": 5,
+        "bairro": "Encontre"
+    }
+]

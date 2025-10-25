@@ -1,0 +1,290 @@
+/* Espaço */
+
+body {
+    margin: 0;
+    background-image: radial-gradient(rgb(3, 3, 55), rgb(4, 0, 35), black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.espaco {
+    font-size: 6px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+
+
+/* Sol */
+
+.sol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    height: 10em;
+    width: 10em;
+    background-image: radial-gradient(rgb(255, 132, 0), rgb(255, 183, 0), rgb(255, 217, 0));
+    border-radius: 50px;
+    box-shadow: 0 0 3em white;
+}
+
+
+/* orbitas */
+
+.mercurio,
+.venus,
+.terra,
+.lua,
+.marte,
+.jupiter,
+.saturno,
+.urano,
+.netuno,
+.plutao {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+
+/* Mercúrio */
+
+.mercurio {
+    top: 12.5em;
+    left: 12.5em;
+    width: 15em;
+    height: 15em;
+    animation: orbita 8.8s linear infinite;
+}
+
+.mercurio::before {
+    top: 1.5em;
+    right: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: grey;
+}
+
+
+/* Vênus */
+
+.venus {
+    top: 10em;
+    left: 10em;
+    width: 20em;
+    height: 20em;
+    animation: orbita 22.5s linear infinite;
+}
+
+.venus::before {
+    top: 2em;
+    right: 2em;
+    width: 2em;
+    height: 2em;
+    background-color: rgb(190, 145, 68);
+}
+
+
+/* Terra e Lua */
+
+.terra {
+    top: 6em;
+    left: 6em;
+    width: 28em;
+    height: 28em;
+    animation: orbita 36.5s linear infinite;
+}
+
+.lua {
+    top: 2em;
+    right: 0em;
+    height: 6em;
+    width: 6em;
+    animation: orbita 2.7s linear infinite;
+}
+
+.terra::before {
+    top: 3em;
+    right: 1em;
+    width: 4em;
+    height: 4em;
+    background-image: linear-gradient(90deg, green, blue);
+}
+
+.lua::before {
+    top: 0.4em;
+    right: 0.1em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+
+
+/* Marte */
+
+.marte {
+    top: 2em;
+    left: 2.5em;
+    width: 36em;
+    height: 36em;
+    animation: orbita 68.7s linear infinite;
+}
+
+.marte::before {
+    top: 4.5em;
+    right: 3em;
+    width: 2.8em;
+    height: 2.8em;
+    background-image: linear-gradient(90deg, rgb(255, 68, 0), rgb(101, 31, 1));
+}
+
+
+/* Júpiter */
+
+.jupiter {
+    top: -2em;
+    left: -2em;
+    width: 45em;
+    height: 45em;
+    animation: orbita 433.3s linear infinite;
+}
+
+.jupiter::before {
+    top: 4em;
+    right: 3.5em;
+    width: 5em;
+    height: 5em;
+    background-image: radial-gradient(rgb(224, 197, 168), rgb(224, 197, 168), rgb(239, 172, 141), rgb(224, 197, 168), rgb(224, 197, 168));
+}
+
+
+/* Saturno */
+
+.saturno {
+    top: -10em;
+    left: -10em;
+    width: 60em;
+    height: 60em;
+    animation: orbita 1075.9s linear infinite;
+}
+
+.saturno::before {
+    top: 6.8em;
+    right: 5em;
+    width: 5em;
+    height: 5em;
+    background-image: radial-gradient(rgb(214, 178, 86), rgb(196, 163, 79), rgb(143, 118, 57), rgb(214, 178, 86));
+}
+
+.aneis {
+    position: absolute;
+    border: 0.8em solid rgb(86, 81, 58);
+    border-radius: 50px;
+    width: 6em;
+    height: 6em;
+    top: 5.55em;
+    right: 3.65em;
+}
+
+
+/* Urano */
+
+.urano {
+    top: -17em;
+    left: -17em;
+    width: 75em;
+    height: 75em;
+    animation: orbita 3068.7s linear infinite;
+}
+
+.urano::before {
+    top: 9em;
+    right: 8em;
+    width: 4.5em;
+    height: 4.5em;
+    background-image: linear-gradient(90deg, rgb(0, 213, 255), rgb(5, 113, 180));
+}
+
+
+/* Netuno */
+
+.netuno {
+    top: -23em;
+    left: -23em;
+    width: 90em;
+    height: 90em;
+    animation: orbita 6019s linear infinite;
+}
+
+.netuno::before {
+    top: 10em;
+    right: 12em;
+    width: 4.3em;
+    height: 4.3em;
+    background-image: radial-gradient(darkblue, rgb(2, 2, 162), darkblue);
+}
+
+
+/* Plutão */
+
+.plutao {
+    top: -28em;
+    left: -28em;
+    width: 100em;
+    height: 100em;
+    animation: orbita 9056s linear infinite;
+}
+
+.plutao::before {
+    top: 14em;
+    right: 14em;
+    width: 1.2em;
+    height: 1.2em;
+    background-image: linear-gradient(rgb(55, 0, 0), burlywood);
+}
+
+
+/* Faz tudo aparecer */
+
+.terra::before,
+.lua::before,
+.mercurio::before,
+.venus::before,
+.terra::before,
+.lua::before,
+.marte::before,
+.jupiter::before,
+.saturno::before,
+.urano::before,
+.netuno::before,
+.plutao::before {
+    content: '';
+    position: absolute;
+    border-radius: 50px;
+}
+
+
+/* Estrelas */
+
+.estrelas {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Animação */
+
+@keyframes orbita {
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.dados{
+    margin: 1rem auto;
+    border: 0.3rem cadetblue solid;
+    padding: 3rem;
+    width: 50%;
+    background-color: whitesmoke;
+}
+
+.btn{
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    color: cadetblue;
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 11rem;
+    transition: background-color 0.5s;
+}
+
+.btn:hover{
+    background-color: rgb(195, 207, 216);
+    box-shadow: 1px 1px 4px #333333;
+}
+
+.labels{
+    font-size: 3rem;
+    margin-left: 25%;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adicionar Receita</title>
+    <link rel="icon" href="imagens/icon.png">
+    <link rel="stylesheet" href="estiloForms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <h2>Nova Receita</h2>
+        <form id="recipeForm">
+            <label>Nome da Receita: <input type="text" id="nome" required></label><br><br>
+
+            <label>Foto (nome do arquivo, ex: bolo.jpg): 
+                <input type="text" id="foto" required>
+            </label><br><br>
+
+            <label>Categoria:
+        <select id="categoria" required>
+            <option value="Café da Manhã">Café da Manhã</option>
+            <option value="Entrada">Entrada</option>
+            <option value="Prato Principal">Prato Principal</option>
+            <option value="Sopa">Sopa</option>
+            <option value="Sobremesa">Sobremesa</option>
+        </select>
+        </label><br><br>
+
+            <label>Tempo de Preparo: <input type="text" id="tempo" required></label><br><br>
+
+            <h3>Ingredientes</h3>
+            <div id="ingredientes"></div>
+            <button type="button" class="btn" onclick="addIngrediente()">+ Adicionar Ingrediente</button><br><br>
+
+            <h3>Modo de Preparo</h3>
+            <textarea id="preparo" rows="6" cols="40" required placeholder="Use ENTER para separar os passos."></textarea><br><br>
+
+            <button type="submit" class="btn" onclick="window.location.href='index.html'">Salvar Receita</button>
+            <button type="button" class="btn" id="voltar" onclick="window.location.href='index.html'">Voltar para a página principal</button>
+        </form>
+    </main>
+    <footer>
+        <span>MasterCléo © Todos os Direitos Reservados</span>
+        <span>Obrigada pela receita!</span>
+        <div class="contato">
+            <a href="https://www.instagram.com/thewriter_br?igsh=MTRwM2RzZTd1YnE1bQ==" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/cleo-pereira" target="_blank" aria-label="Github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/cleopatra_pef?t=zAxE9K2dkBkuIY79ql-bxg&s=09" target="_blank" aria-label="x-twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com/@coelhoquefazmiau?_t=ZM-8zkWxigE3dN&_r=1" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </footer>
+    <script>
+        function addIngrediente() {
+            const div = document.createElement("div");
+            div.className = "ingrediente";
+            div.innerHTML = `
+        <input type="text" placeholder="Item" class="item" required>
+        <input type="text" placeholder="Qtd" class="quantidade" required>
+        <button type="button" class="remover" onclick="this.parentElement.remove()">X</button>
+      `;
+            document.getElementById("ingredientes").appendChild(div);
+        }
+
+        document.getElementById("recipeForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const ingredientesEls = document.querySelectorAll(".ingrediente");
+            const ingredientes = Array.from(ingredientesEls).map(div => {
+                return {
+                    item: div.querySelector(".item").value,
+                    quantidade: div.querySelector(".quantidade").value || null
+                };
+            });
+
+            const receita = {
+                nome: document.getElementById("nome").value,
+                foto: document.getElementById("foto").value,
+                categoria: document.getElementById("categoria").value,
+                tempo_preparo: document.getElementById("tempo").value,
+                ingredientes: ingredientes,
+                modo_preparo: document.getElementById("preparo").value.split("\n").map(p => p.trim()).filter(p => p.length > 0)
+            };
+
+            const blob = new Blob([JSON.stringify(receita, null, 2)], {
+                type: "application/json"
+            });
+
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = receita.nome.replace(/\s+/g, "_") + ".json";
+            a.click();
+            URL.revokeObjectURL(url);
+
+            alert("Receita salva com sucesso! 🎉  Clique em OK para voltar à página principal.");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Restaurante</title>
+    <link rel="icon" href="imagens/d20.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="imagens/d20.png" alt="D20" id="logo">
+            <div class="titulo-container">
+                <h1 id="titulo">Sorteador de Restaurante</h1>
+                <h2>Role o dado e escolha onde você vai comer hoje!</h2>
+            </div>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#intro"><i class="fas fa-circle-info"></i> Sobre nós</a></li>
+                <li><a href="#dado-section"><i class="fas fa-dice-d20"></i> Rolar o dado</a></li>
+                <li><a href="#restaurantes-section"><i class="fas fa-utensils"></i> Restaurantes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content" id="intro">
+            <h3 class="intro-titulo">Com dúvidas de onde você quer comer hoje? Just roll the dice! <i class="fas fa-dice-d20"></i></h3>
+            <div class="intro-texto">
+                <p>Olá, Cléo e Luísa do futuro! Não estão conseguindo decidir onde vocês vão ao mossar ou jantar hoje? Normal, né? Bom, espero que estejam com os estômagos vazios e as carteiras cheias (ou no caso a conta bancária), pois o dado irá resolver
+                    todos os seus problemas!</p>
+                <p>Vocês certamente já sabem como funciona, mas caso tenham se esquecido, aqui vai as instruções: <b>Aperte o dado e peça o uber</b>.</p>
+                <p>Sim, é simples assim.</p>
+                <p>Brincadeiras à parte, esse site foi feito com uma combinação de HTML-5, CSS e JavaScript, onde, ao apertar um botão, o sistema vai sortear um número aleatório entre 1 e 20, tal qual um d20. Esse número corresponde a um restaurante da lista
+                    que vocês fizeram. Mas não se preocupem, vocês não vão precisar ficar catando o nome do restaurante da lista, pois assim que sair o resultado do dado, eu irei mostrar o restaurante correspondente e o tipo de comida que ele serve (asiática,
+                    mexicana, comida comida, etc), além de uma foto do local, o bairro onde fica e o quanto vocês irão gastar lá $$$$$.</p>
+                <div class="preco-texto">
+                    <h4 id="mostrar-preco-texto">$ Como é medido o sistema de preços? <i class="fa-solid fa-chevron-down"></i></h4>
+                    <div class="preco-texto-inside">
+                        <p>Nas informações de cada restaurante, haverá um campo de preço, que é uma estimativa do quanto será gasto em cada restaurante. Medimos o preço usando uma escala de 100 reais: a cada 100 reais gastos, aparecerá um $, ou seja:</p>
+                        <ul class="preco-lista">
+                            <li>Até R$100,00 = $ (um cifrão)</li>
+                            <li>Entre R$100 e R$200 = $$ (dois cifrões)</li>
+                            <li>Entre R$200 e R$300 = $$$ (dois cifrões)</li>
+                        </ul>
+                        <p>E por aí vai...</p>
+                        <p>Detalhe, o preço representa o preço gasto pelas duas em conjunto, não individualmente.</p>
+                    </div>
+                </div>
+                <p>Formalidades encerradas, agora role o dado e vá encher o buchin.</p>
+                <p id="declaracao">Te amo, Lu!</p>
+            </div>
+        </section>
+        <section class="content" id="dado-section">
+            <div class="dado-content">
+                <h3 class="dado-titulo">Role o dado!</h3>
+                <div class="dado-container">
+                    <button id="rolarDado"><img src="imagens/d20.png" alt="D20" class="dadoBotao"></button>
+                </div>
+            </div>
+            <div class="resultado-container"></div>
+        </section>
+        <section class="content" id="restaurantes-section">
+            <h3 class="restaurantes-titulo"><i class="fas fa-utensils"></i> Nossos Restaurantes</h3>
+            <div class="restaurantes-lista">
+                <ol id="listaRestaurantes"></ol>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Aproveite sua refeição!</span>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

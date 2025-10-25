@@ -1,14 +1,36 @@
-[
-    {
+[{
         "nome": "Receitas da MasterCléo",
         "descricao": "Esse foi um dos primeiros sites que eu fiz para voltar a estudar webdev. Se trata de um site com vários cards de receitas que são carregados por um javascript. Atualmente o site é feito usando um .json, mas em breve eu irei adaptar para usar um banco de dados.",
         "link": "https://infogirl2020.github.io/receitas/index.html",
-        "logo": "receitas.png"
+        "logo": "receitas.png",
+        "periodo": "Set/2025 - now"
     },
     {
         "nome": "Sorteador de Restaurantes",
         "descricao": "O sorteador de restaurantes é um projeto simples que usa javascript para sortear aleatoriamente um restaurante de determinada lista. É um site bem pessoal, para me ajudar na hora de decidir onde comer. Usei ele para praticar meus conhecimentos em javascript e estudar mais css. Foi meu primeiro projeto de verdade.",
         "link": "https://infogirl2020.github.io/restaurantes/index.html",
-        "logo": "restaurantes.png"
+        "logo": "restaurantes.png",
+        "periodo": "Set/2025"
+    },
+    {
+        "nome": "Ficha de RPG",
+        "descricao": "Essa é minha tentativa de tentar fazer uma ficha de RPG interativa com html e javascript. Ainda está bem difícil de sair do papel, mas algum dia vai dar certo.",
+        "link": " ",
+        "logo": "dnd.png",
+        "periodo": "Set/2025 - now"
+    },
+    {
+        "nome": "Sistema Solar",
+        "descricao": "Uma simples representação do sistema solar usango majoritariamente css, e um pouco de javascript para gerar as estrelas no fundo. A inspiração usada foi um vídeo no Youtube do canal CogniSolver.",
+        "link": "https://infogirl2020.github.io/sistemasolar/",
+        "logo": "sol.png",
+        "periodo": "Out/2025"
+    },
+    {
+        "nome": "Tradutor de Código Morse",
+        "descricao": "Eu estava entediada e decidi fazer um tradutor de código morse usando javascript =D.",
+        "link": "https://infogirl2020.github.io/morse/",
+        "logo": "morse.png",
+        "periodo": "Out/2025"
     }
 ]

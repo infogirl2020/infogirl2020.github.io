@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DDE5B6;
+    margin: 0;
+}
+
+header {
+    background-color: #96C278;
+    padding: 0.8rem;
+    box-shadow: 1px 2px 10px #4c4c4c;
+}
+
+#logo {
+    width: 18rem;
+    height: auto;
+    border-radius: 100px;
+    border: #05668d solid 0.5rem;
+    float: left;
+    margin: 0 2rem;
+}
+
+#titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+    text-align: center;
+    display: inline-block;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+aside{
+    padding: 1rem;
+    width: 100%;
+    background-color: #96C278;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: 2px 0 5px #4c4c4c;
+    overflow: auto;
+    z-index: -1;
+}
+
+aside ol{
+    padding-left: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+aside ol a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.botoes-ordenar {
+    display: flex;
+    gap: 2%;
+}
+
+.botao {
+    background-color: rgb(3, 135, 21);
+    border: none;
+    color: white;
+    margin: 1% 0 0 0;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.botao:hover {
+    background-color: rgb(0, 108, 63);
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+section{
+    margin: 2rem;
+}
+
+#conteudo {
+    padding: 0 2% 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.comida {
+    width: 32%;
+    height: auto;
+    border: #05668d solid 0.5rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #4c4c4c;
+    padding: 2%;
+    background-color: #f0ead2;
+}
+
+.comida h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.foto {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.comida h3 {
+    margin: 2%;
+}
+
+li.passos {
+    margin-top: 1.5%;
+    text-align: justify;
+}
+
+footer {
+    background-color: #6C584C;
+    margin-bottom: -40px;
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+    padding-right: 2%;
+    color: lightgreen;
+    font-weight: bold;
+}
+
+footer h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.contato a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #252424;
+}
+
+.fa-instagram {
+    color: #e1306c;
+}
